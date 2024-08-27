@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/svg/Logo.svg" alt="logo alura" >
+    </header>
+    <main>
+        <form class="formulario">
+        <textarea class="entrada__formulario" name="mensaje"  cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>    
+        <div class="contenedor__botones">
+            <div class="alerta">
+                <img src="./assets/svg/exclamacion.svg" alt="icono de alerta">
+                <spam>Solo letras minúsculas y sin acentos</spam>
+            </div>
+        </div>
+
+        <div class="submit__container">
+            <input class="form__boton" type="submit" value="Encriptar">
+            <input class="form__boton form__boton--secundary" type="submit" value="Desencriptar">
+       </div>
+        </form>
+    
+   
+    
+        <aside class="resultado">
+            <img src="./assets/img/Muñeco.png" alt="Imagen de buscando" class="buscando__msj">
+            <div class="loader hidden"></div>
+            <div class="resultado_contenedor">
+                <h3 class="resultado__titulo">Ningún mensaje fue encontrado</h3>
+                <p class="resultado__texto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="resultado_boton form__boton form__boton--secundary hidden">Copiar</button>
+            </div>
+        </aside>
+    </main>
+    <script src="./script.js"></script>
+    <footer>
+        <p class="footer"> Desarrollado por Giselle Beltrán</p>
+    </footer>
+</body>
+</html>
