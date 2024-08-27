@@ -65,14 +65,14 @@ botonEncriptar.addEventListener("click", (e)=>{
     let mensajeEncriptado = encriptarmensaje(mensaje);
     resultadoTexto.textContent = mensajeEncriptado;//muestra el resultado en el espacio de h3 
     botonCopiar.classList.remove("hidden");//quita la propiedad del botón invisible de copiar
-    resultadoTitulo.textContent = "EL resultado es: ";
+    resultadoTitulo.textContent = "El resultado es: ";
 });
 botonDesencriptar[1].addEventListener("click", (e)=>{
     e.preventDefault();
     let mensaje = textArea.value.toLowerCase();
     let mensajeDesencriptado = desencriptarmensaje(mensaje);
     resultadoTexto.textContent = mensajeDesencriptado;
-    resultadoTitulo.textContent = "EL resultado es: ";
+    resultadoTitulo.textContent = "El resultado es: ";
     botonCopiar.classList.remove("hidden");
     
 
